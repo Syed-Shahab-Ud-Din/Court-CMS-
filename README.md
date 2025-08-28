@@ -1,6 +1,5 @@
-# Court-CMS-
-Easily find out Percentage Target and Pendency 
-<!DOCTYPE html>
+# Court CMS
+Easily find out Percentage Target and Pendency
 <html lang="en">
 <head>
     <meta charset="UTF-8">
