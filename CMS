@@ -135,7 +135,7 @@ Easily find out Percentage Target and Pendency
         
         .dashboard {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr;
             gap: 20px;
             margin-bottom: 20px;
         }
@@ -198,28 +198,7 @@ Easily find out Percentage Target and Pendency
         }
         
         .summary {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e0e0e0;
-        }
-        
-        .summary h2 {
-            margin-bottom: 15px;
-            color: #1a237e;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        
-        .summary-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 12px;
-            padding: 10px;
-            background: #f9f9f9;
-            border-radius: 5px;
-            border-left: 4px solid #1565c0;
+            display: none;
         }
         
         .target-message {
@@ -541,12 +520,12 @@ Easily find out Percentage Target and Pendency
                         <span>Target Need Cases</span>
                         <span id="additionalCases">0</span>
                     </div>
-                    
-                    <button class="btn btn-success" id="generateReport" style="width: 100%; margin-top: 20px;">
-                        <i class="fas fa-file-pdf"></i> Generate Report
-                    </button>
                 </div>
             </div>
+            
+            <button class="btn btn-success" id="generateReport" style="width: 100%; margin-top: 20px;">
+                <i class="fas fa-file-pdf"></i> Generate Report
+            </button>
         </div>
 
         <div class="report" id="reportSection">
@@ -847,7 +826,7 @@ Easily find out Percentage Target and Pendency
             const dispCriminal = parseInt(document.getElementById('dispCriminal').value) || 0;
             const dispCivil = parseInt(document.getElementById('dispCivil').value) || 0;
             const inCriminal = parseInt(document.getElementById('inCriminal').value) || 0;
-            const inCivil = parseInt(document.getElementById('inCivil').value) || 0;
+            inCivil = parseInt(document.getElementById('inCivil').value) || 0;
             const outCriminal = parseInt(document.getElementById('outCriminal').value) || 0;
             const outCivil = parseInt(document.getElementById('outCivil').value) || 0;
             
